@@ -1,0 +1,38 @@
+{
+  "name": "grayl/input-duplicator",
+  "description": "Class for working with form submission de-duplication",
+  "keywords": [
+    "grayl"
+  ],
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Grogwood LLC",
+      "email": "dev@grogwood.com",
+      "homepage": "http://grogwood.com",
+      "role": "Developer"
+    }
+  ],
+  "type": "library",
+  "require": {
+    "grayl/database-main": "^1",
+    "grayl/date": "^1",
+    "grayl/mixin-common": "^1",
+    "php": "~7.4",
+    "ext-openssl": "*"
+  },
+  "require-dev": {
+    "grayl/gateway-pdo": "^1",
+    "phpunit/phpunit": "^9"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grayl\\Input\\Duplicator\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Grayl\\Test\\Input\\Duplicator\\": "tests/"
+    }
+  }
+}
